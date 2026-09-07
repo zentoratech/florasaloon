@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio – Flora Saloon & Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>Flora <span>Saloon & Studio</span></h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="portfolio-page">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2>Our <span>Portfolio</span></h2>
+                <p>Explore our work — where creativity meets beauty</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hair">Hair</button>
+                <button class="filter-btn" data-filter="makeup">Makeup</button>
+                <button class="filter-btn" data-filter="nail">Nail Art</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="skincare">Skincare</button>
+            </div>
+
+            <!-- Portfolio Grid - Side by Side -->
+            <div class="portfolio-grid">
+                <!-- Item 1 - Hair -->
+                <div class="portfolio-item" data-category="hair">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&h=400&fit=crop" alt="Hair Styling" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Hair Styling</h3>
+                                <p>Professional haircut & styling</p>
+                                <span class="portfolio-tag">Hair</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 - Makeup -->
+                <div class="portfolio-item" data-category="makeup">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&h=400&fit=crop" alt="Makeup" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Makeup Studio</h3>
+                                <p>Professional makeup artist</p>
+                                <span class="portfolio-tag">Makeup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 - Nail -->
+                <div class="portfolio-item" data-category="nail">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=600&h=400&fit=crop" alt="Nail Art" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Nail Art</h3>
+                                <p>Creative nail designs</p>
+                                <span class="portfolio-tag">Nail Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 - Bridal -->
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=400&fit=crop" alt="Bridal" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Bridal Makeup</h3>
+                                <p>Complete bridal transformation</p>
+                                <span class="portfolio-tag">Bridal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 - Skincare -->
+                <div class="portfolio-item" data-category="skincare">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop" alt="Facials" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Skincare</h3>
+                                <p>Glowing skin treatments</p>
+                                <span class="portfolio-tag">Skincare</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 - Hair -->
+                <div class="portfolio-item" data-category="hair">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&h=400&fit=crop" alt="Hair Color" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Hair Coloring</h3>
+                                <p>Professional hair color & highlights</p>
+                                <span class="portfolio-tag">Hair</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7 - Makeup -->
+                <div class="portfolio-item" data-category="makeup">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=400&fit=crop" alt="Party Makeup" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Party Makeup</h3>
+                                <p>Glamorous party look</p>
+                                <span class="portfolio-tag">Makeup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8 - Bridal -->
+                <div class="portfolio-item" data-category="bridal">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1532712937440-2f3f6d915932?w=600&h=400&fit=crop" alt="Bridal" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Bridal Hairstyle</h3>
+                                <p>Elegant bridal hairdo</p>
+                                <span class="portfolio-tag">Bridal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 9 - Nail -->
+                <div class="portfolio-item" data-category="nail">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop" alt="Nail Art" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>3D Nail Art</h3>
+                                <p>Premium 3D nail designs</p>
+                                <span class="portfolio-tag">Nail Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 10 - Skincare -->
+                <div class="portfolio-item" data-category="skincare">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop" alt="Facial" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Organic Facial</h3>
+                                <p>Natural glow treatment</p>
+                                <span class="portfolio-tag">Skincare</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 11 - Hair -->
+                <div class="portfolio-item" data-category="hair">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=400&fit=crop" alt="Hair" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Hair Treatment</h3>
+                                <p>Premium hair care</p>
+                                <span class="portfolio-tag">Hair</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 12 - Makeup -->
+                <div class="portfolio-item" data-category="makeup">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop" alt="Makeup" />
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-search-plus"></i>
+                                <h3>Editorial Makeup</h3>
+                                <p>High-fashion makeup</p>
+                                <span class="portfolio-tag">Makeup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Flora Saloon & Studio</h3>
+                    <p>Where elegance meets perfection. Premium salon services since 2020.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p><span>Mon - Fri:</span> 9:00 AM - 9:00 PM</p>
+                    <p><span>Saturday:</span> 9:00 AM - 8:00 PM</p>
+                    <p><span>Sunday:</span> 10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe</h4>
+                    <p>Get exclusive offers & updates</p>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Flora Saloon & Studio. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Portfolio Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                const filterValue = this.dataset.filter;
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.dataset.category === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Initialize all visible
+        portfolioItems.forEach(item => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>

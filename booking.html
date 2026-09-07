@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Book Now – Flora Saloon & Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>Flora <span>Saloon & Studio</span></h1></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="booking.html" class="active">Book Now</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section class="booking-page">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Book Your <span>Appointment</span></h2>
+                    <p>Fill in the details below and we'll get back to you within 24 hours.</p>
+                    <div class="booking-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Instant Confirmation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free Consultation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Flexible Rescheduling</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Best Price Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i> Full Name *</label>
+                                <input type="text" id="name" placeholder="Enter your full name" required />
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i> Email *</label>
+                                <input type="email" id="email" placeholder="Enter your email" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-phone"></i> Phone *</label>
+                                <input type="tel" id="phone" placeholder="Enter phone number" required />
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-concierge-bell"></i> Service *</label>
+                                <select id="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="hair">Hair Styling</option>
+                                    <option value="makeup">Makeup Studio</option>
+                                    <option value="nail">Nail Art</option>
+                                    <option value="facial">Skincare & Facial</option>
+                                    <option value="bridal">Bridal Package</option>
+                                    <option value="grooming">Grooming for Men</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-calendar"></i> Date *</label>
+                                <input type="date" id="date" required />
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-clock"></i> Time *</label>
+                                <input type="time" id="time" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label><i class="fas fa-comment"></i> Special Requests</label>
+                            <textarea id="message" placeholder="Any specific requirements or preferences?" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-block">
+                            <i class="fas fa-calendar-check"></i> Book Appointment
+                        </button>
+                    </form>
+
+                    <div id="bookingMessage" style="display:none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Flora Saloon & Studio</h3>
+                    <p>Where elegance meets perfection. Premium salon services since 2020.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p><span>Mon - Fri:</span> 9:00 AM - 9:00 PM</p>
+                    <p><span>Saturday:</span> 9:00 AM - 8:00 PM</p>
+                    <p><span>Sunday:</span> 10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe</h4>
+                    <p>Get exclusive offers & updates</p>
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Flora Saloon & Studio. All rights reserved. | Designed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            
+            if (name && email && phone && service && date && time) {
+                // Hide form, show success
+                document.getElementById('bookingForm').style.display = 'none';
+                const msgDiv = document.getElementById('bookingMessage');
+                msgDiv.style.display = 'block';
+                msgDiv.innerHTML = `
+                    <div class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Booking Confirmed! 🎉</h3>
+                        <p>Thank you, <strong>${name}</strong>!</p>
+                        <p>Your <strong>${service.replace('_', ' ')}</strong> booking on <strong>${date}</strong> at <strong>${time}</strong> is confirmed.</p>
+                        <p style="font-size: 14px; opacity: 0.8;">We'll send a confirmation to <strong>${email}</strong> and <strong>${phone}</strong>.</p>
+                        <button onclick="location.reload()" class="btn-primary btn-small" style="margin-top: 15px;">Book Another</button>
+                    </div>
+                `;
+            } else {
+                alert('Please fill all required fields.');
+            }
+        });
+
+        // Set min date to today
+        document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
